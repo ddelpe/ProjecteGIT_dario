@@ -103,7 +103,6 @@
           v-for="(poke, index) in player1Team"
           :key="index"
           :pokemon="poke"
-          :is-selected="true"
         />
       </div>
       <h3 id="player2-team-name">Equip del Jugador {{ player2Name }}</h3>
@@ -112,7 +111,6 @@
           v-for="(poke, index) in player2Team"
           :key="index"
           :pokemon="poke"
-          :is-selected="true"
         />
       </div>
       <button @click="startBattle">Iniciar la Batalla</button>
@@ -124,12 +122,12 @@
       <p id="current-turn-display">És el torn de {{ currentTurnPlayer }}!</p>
       <div class="battle-container">
         <div class="pokemon-fighter">
-          <pokemon-card v-if="pokemon1Arena" :pokemon="pokemon1Arena" :is-selected="true" />
+          <pokemon-card v-if="pokemon1Arena" :pokemon="pokemon1Arena"  />
           <p>Poder especial: {{ pokemon1Arena.special_power }}</p>
         </div>
         <p class="vs-text">VS</p>
         <div class="pokemon-fighter">
-          <pokemon-card v-if="pokemon2Arena" :pokemon="pokemon2Arena" :is-selected="true" />
+          <pokemon-card v-if="pokemon2Arena" :pokemon="pokemon2Arena"  />
           <p>Poder especial: {{ pokemon2Arena.special_power }}</p>
         </div>
         <div class="battle-log-container">
