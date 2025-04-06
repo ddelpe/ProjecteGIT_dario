@@ -19,7 +19,7 @@ Instal·lació:
 Ús:
 1- Per fer cambis i que apareguin al repositori simplement fem els combis necesaris 
 2- Per pujar-ho anem al github desktop i fem un commit amb un titol i explicant els canvis fets
-3- Donarl-hi a publish i ja 
+3- Donarl-hi a push i ja s'haura pujat al repositori
 
 Característiques:
 - joc de pokemons en solitari
